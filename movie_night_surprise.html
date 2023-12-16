@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Night Surprise</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #ff66b2;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #ff66b2;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #e55a9b;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Movie Night Surprise</h1>
+    
+    <p>Hey [Thihansaaa]!</p>
+    
+    <p>I have a special surprise for you. How about a cozy movie night together?</p>
+    
+    <p>I've picked a few options for us to choose from. Click the button below to check them out!</p>
+
+    <button onclick="showMovies()">Check out the movie options</button>
+
+    <div id="movieOptions" style="display: none;">
+        <p>Here are the movie options:</p>
+        <ul>
+            <li>Option 1: [Casablanca]</li>
+            <li>Option 2: [La La Land]</li>
+            <li>Option 3: [The Fault in Our Stars]</li>
+        </ul>
+        <p>Let me know which one you'd like to watch!</p>
+    </div>
+
+    <img src="https://placekitten.com/800/400" alt="Cozy Movie Night" />
+
+    <script>
+        function showMovies() {
+            var movieOptionsDiv = document.getElementById('movieOptions');
+            movieOptionsDiv.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
